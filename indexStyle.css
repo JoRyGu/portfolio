@@ -1,3 +1,19 @@
 body {
+  width: 98%;
+  height: 100%;
+  color: white;
+  background: url(assets/images/background1920.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 1920px auto;
+  /* background-color: #0c0c0d; */
+
+}
+
+.bg {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
 }
