@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Dank Mono";
+  src: url(assets/fonts/DankMono-Regular.ttf);
+  font-weight: normal;
+}
+
 body {
   width: 98%;
   height: 100%;
@@ -5,15 +11,94 @@ body {
   background: url(assets/images/background1920.png);
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: 1920px auto;
-  /* background-color: #0c0c0d; */
-
+  background-size: auto 100vh;
+  font-family: "Dank Mono", monospace;
 }
 
-.bg {
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+h1, h2 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  width: 98%;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 60px;
+  background: rgba(0,0,0,0.4);
+}
+
+.subtitle {
+  font-size: 22px;
+  background: rgba(0,0,0,0.4);
+}
+
+.red {
+  color: #ec5252;
+}
+
+.red-bg {
+  background: #ec5252;
+}
+
+.button {
+  margin: 15px;
+  padding: 8px 20px;
+  transition: all 125ms ease-in;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.social {
+  margin-top: 15px;
+}
+
+.social a {
+  transition: all 200ms ease-in;
+}
+
+.social a:hover {
+  color: hsl(61, 100%, 50%);
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    background-size: 1920px auto;
+  }
+
+  .title {
+    font-size: 80px;
+  }
+  
+  .subtitle {
+    font-size: 29px;
+  }
+
+  .social {
+    font-size: 30px;
+  }
+
+  .button {
+    margin: 20px;
+    padding: 12px 30px;
+    font-size: 20px;
+  }
 }
