@@ -10,7 +10,7 @@ body {
   color: white;
   background: url(assets/images/background1920.png);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: cover;
   background-size: auto 100vh;
   font-family: "Dank Mono", monospace;
 }
@@ -77,6 +77,18 @@ main {
 
 .social a:hover {
   color: hsl(61, 100%, 50%);
+}
+
+@media only screen and (min-width: 500px) {
+  body {
+    background-size: 999px auto;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    background-size: auto 100vh;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
