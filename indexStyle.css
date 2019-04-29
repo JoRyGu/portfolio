@@ -115,7 +115,7 @@ main {
   }
 }
 
-@media only screen and (min-height: 1080px) {
+@media only screen and (min-height: 1000px) {
   body {
     background-size: auto 100vh;
   }
