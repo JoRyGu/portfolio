@@ -81,13 +81,13 @@ main {
 
 @media only screen and (min-width: 500px) {
   body {
-    background-size: 999px auto;
+    background-size: 700px auto;
   }
 }
 
 @media only screen and (min-width: 700px) {
   body {
-    background-size: auto 100vh;
+    background-size: 1000px auto;
   }
 }
 
@@ -112,5 +112,11 @@ main {
     margin: 20px;
     padding: 12px 30px;
     font-size: 20px;
+  }
+}
+
+@media only screen and (min-height: 1080px) {
+  body {
+    background-size: auto 100vh;
   }
 }
